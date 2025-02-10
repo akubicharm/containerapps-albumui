@@ -10,6 +10,8 @@ The Album API sample is available in other languages:
 
 ## 実行時の設定
 
-albumui アプリはデフォルトで3000ポート、alubumapi アプリはデフォルトで3500ポートでリッスンする。
+albumui アプリはデフォルトで8080ポート、alubumapi アプリはデフォルトで8080ポートでリッスンする。
 
 albumui からバックエンドの呼び出しは、`${API_BASE_URL}/albums` となるので、albumapi のURLを環境変数または`.env` ファイルで`API_BASE_URL` を設定してから起動する。
+
+リッスンするポートは、src/bin/wwwファイルで指定。
